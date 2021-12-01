@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/lw.dir/Bank.cpp.o CMakeFiles/lw.dir/Customer.cpp.o CMakeFiles/lw.dir/Account.cpp.o CMakeFiles/lw.dir/CheckingAccount.cpp.o CMakeFiles/lw.dir/SavingAccount.cpp.o -o lw 
