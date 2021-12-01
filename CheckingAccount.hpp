@@ -6,7 +6,7 @@
 using namespace std;
 
 class CheckingAccount : public Account {
-    public: CheckingAccount(string number, const Customer& customer, double balance); //prototype for the constructor defined in CheckingAccount.cpp
-    void accrue(double rate) override{}
+    public: CheckingAccount(string number, Customer& customer, double balance); //prototype for the constructor defined in CheckingAccount.cpp
+    void accrue(double rate) override {}
 };
 #endif //LW_CHECKINGACCOUNT_HPP

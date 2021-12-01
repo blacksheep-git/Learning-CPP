@@ -20,15 +20,13 @@ class Bank {
                 a.accrue(rate);
             }
         }
-        friend ostream& operator<<(ostream& os, const Bank& bank);
+        friend ostream& operator<<(ostream& os, const Bank& bank){
+            for (Account& a : Bank::accounts) {
+                os << a;
+            }
+            return os;
+        }
 };
-
-ostream &operator<<(ostream &os, const Bank &bank) {
-    for (Account& a : Bank::accounts) {
-        os << a;
-    }
-    return os;
-}
 
 int main() {
     Bank newBank;

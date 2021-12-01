@@ -3,4 +3,4 @@
 #include <utility>
 using namespace std;
 
-CheckingAccount::CheckingAccount(string number, const Customer& customer, double balance) : Account(move(number), customer, balance) {}
+CheckingAccount::CheckingAccount(string number, Customer& customer, double balance) : Account(move(number), customer, balance) {}
