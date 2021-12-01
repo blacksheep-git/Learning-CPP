@@ -12,7 +12,7 @@ class SavingAccount : public Account {
 
     public:
         SavingAccount(string number, Customer& customer, double balance);
-        void accrue(double rate);
+        void accrue(double rate) override;
 };
 
 #endif //BANK_CPP_SAVINGACCOUNT_H
