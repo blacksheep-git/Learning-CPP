@@ -1,5 +1,5 @@
 #include <string>
-#include "Customer.h"
+#include "Customer.hpp"
 using namespace std;
 
 Customer::Customer(string name) {

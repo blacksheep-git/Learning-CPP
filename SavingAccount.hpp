@@ -1,8 +1,8 @@
 #ifndef BANK_CPP_SAVINGACCOUNT_H
 #define BANK_CPP_SAVINGACCOUNT_H
 
-#include "Customer.h"
-#include "Account.h"
+#include "Customer.hpp"
+#include "Account.hpp"
 #include <string>
 using namespace std;
 

@@ -85,7 +85,7 @@
 		<Unit filename="/home/teo/CLionProjects/lw/Account.cpp">
 			<Option target="lw"/>
 		</Unit>
-		<Unit filename="/home/teo/CLionProjects/lw/Account.h">
+		<Unit filename="/home/teo/CLionProjects/lw/Account.hpp">
 			<Option target="lw"/>
 		</Unit>
 		<Unit filename="/home/teo/CLionProjects/lw/Bank.cpp">
@@ -94,19 +94,19 @@
 		<Unit filename="/home/teo/CLionProjects/lw/CheckingAccount.cpp">
 			<Option target="lw"/>
 		</Unit>
-		<Unit filename="/home/teo/CLionProjects/lw/CheckingAccount.h">
+		<Unit filename="/home/teo/CLionProjects/lw/CheckingAccount.hpp">
 			<Option target="lw"/>
 		</Unit>
 		<Unit filename="/home/teo/CLionProjects/lw/Customer.cpp">
 			<Option target="lw"/>
 		</Unit>
-		<Unit filename="/home/teo/CLionProjects/lw/Customer.h">
+		<Unit filename="/home/teo/CLionProjects/lw/Customer.hpp">
 			<Option target="lw"/>
 		</Unit>
 		<Unit filename="/home/teo/CLionProjects/lw/SavingAccount.cpp">
 			<Option target="lw"/>
 		</Unit>
-		<Unit filename="/home/teo/CLionProjects/lw/SavingAccount.h">
+		<Unit filename="/home/teo/CLionProjects/lw/SavingAccount.hpp">
 			<Option target="lw"/>
 		</Unit>
 		<Unit filename="/home/teo/CLionProjects/lw/CMakeLists.txt">

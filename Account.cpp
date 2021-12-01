@@ -1,5 +1,5 @@
-#include "Account.h"
-#include "Customer.h"
+#include "Account.hpp"
+#include "Customer.hpp"
 #include <iostream>
 
 using namespace std;

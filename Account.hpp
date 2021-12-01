@@ -2,7 +2,7 @@
 #define BANK_CPP_ACCOUNT_H
 
 #include <string>
-#include "Customer.h"
+#include "Customer.hpp"
 using namespace std;
 
 class Account {
