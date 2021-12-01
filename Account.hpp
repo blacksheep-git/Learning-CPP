@@ -10,13 +10,12 @@ class Account {
         Customer customer;
         string number;
         double balance{};
-
     public:
         virtual ~Account() = default;
         virtual void accrue(double rate) {};
-        virtual double getBalance() { return balance; };
-        virtual void deposit(double amount) { balance += amount; };
-        virtual void withdraw(double amount) { balance -= amount; };
+        [[maybe_unused]] virtual double getBalance() { return balance; };
+        [[maybe_unused]] virtual void deposit(double amount) { balance += amount; };
+        [[maybe_unused]] virtual void withdraw(double amount) { balance -= amount; };
         friend ostream& operator<<(ostream& os, const Account& acct);
 };
 #endif //BANK_CPP_ACCOUNT_H

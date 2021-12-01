@@ -8,8 +8,8 @@
 using namespace std;
 
 class SavingAccount : public Account {
-    private:
-        double interest = 0;
+private:
+    double interest = 0;
     public:
         inline SavingAccount(string number, Customer &customer, double balance){
             this->number=std::move(number);

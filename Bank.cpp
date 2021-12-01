@@ -36,6 +36,7 @@ int main() {
     newBank.add(cAcc);
     newBank.add(sAcc);
     newBank.accrue(0.02);
+    cAcc.deposit(5);
     cout << newBank << endl;
     return 0;
 }
