@@ -2,7 +2,7 @@
 #include "Customer.hpp"
 using namespace std;
 
-ostream &operator<<(ostream &os, const Customer &customer) {
+ostream& operator<<(ostream& os, const Customer& customer) {
     os << customer.name;
     return os;
 }

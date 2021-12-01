@@ -4,13 +4,14 @@
 #include "Customer.hpp"
 #include "Account.hpp"
 #include <string>
+#include <utility>
 using namespace std;
 
 class SavingAccount : public Account {
     private:
         double interest = 0;
     public:
-        SavingAccount(string number, Customer &customer, double balance) : Account(number, customer, balance){}
+        SavingAccount(string number, Customer &customer, double balance) : Account(std::move(number), customer, balance){}
         void accrue(double rate) override;
 };
 
