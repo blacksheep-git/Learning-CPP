@@ -10,6 +10,9 @@ class Customer {
         string name;
         Customer();
         explicit Customer(string name){ this->name=std::move(name);};
-        friend ostream& operator<<(ostream& os, const Customer& cust);
+        friend ostream& operator<<(ostream& os, const Customer& cust){
+            os << cust.name;
+            return os;
+        }
 };
 #endif //LW_CUSTOMER_HPP

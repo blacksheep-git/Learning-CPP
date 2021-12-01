@@ -15,13 +15,11 @@ class Bank {
             accounts.push_back(newAccount);
             numAccounts++;
         }
-
         static void accrue(double rate) {
             for (Account& a : accounts) {
                 a.accrue(rate);
             }
         }
-
         friend ostream& operator<<(ostream& os, const Bank& bank) {
             for (Account& a : accounts) {
                 os << a;
@@ -34,10 +32,10 @@ int main() {
     Bank newBank;
     Customer c("Ann");
     CheckingAccount cAcc("01001",c,100.00);
-    SavingAccount sAcc("01002",c,200.00);
+    SavingAccount sAcc("01002", c, 200.00);
     newBank.add(cAcc);
     newBank.add(sAcc);
     Bank::accrue(0.02);
-    cout << newBank;
+    cout << newBank << endl;
     return 0;
 }

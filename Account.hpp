@@ -9,15 +9,15 @@ class Account {
     protected:
         Customer customer;
         string number;
-        double balance;
+        double balance{};
 
     public:
-        virtual void accrue(double rate) = 0; // Virtual method
-        double getBalance() { return balance; };
-        void deposit(double amount) { balance += amount; };
-        void withdraw(double amount) { balance -= amount; };
-        //void setCustomer(Customer& customer){ this->customer = customer; };
+        Account(string number, const Customer& customer, double balance);
+        virtual ~Account() = default;
+        virtual void accrue(double rate) {};
+        virtual double getBalance() { return balance; };
+        virtual void deposit(double amount) { balance += amount; };
+        virtual void withdraw(double amount) { balance -= amount; };
         friend ostream& operator<<(ostream& os, const Account& acct);
 };
-
 #endif //BANK_CPP_ACCOUNT_H

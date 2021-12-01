@@ -6,12 +6,11 @@
 #include <string>
 using namespace std;
 
-class SavingAccount : virtual public Account {
+class SavingAccount : public Account {
     private:
         double interest = 0;
-
     public:
-        SavingAccount(string number, Customer& customer, double balance);
+        SavingAccount(string number, Customer &customer, double balance) : Account(number, customer, balance){}
         void accrue(double rate) override;
 };
 
