@@ -2,4 +2,7 @@
 #include "Customer.hpp"
 using namespace std;
 
-Customer::Customer() = default;
+ostream &operator<<(ostream &os, const Customer &customer) {
+    os << customer.name;
+    return os;
+}

@@ -8,11 +8,8 @@ using namespace std;
 class Customer {
     public:
         string name;
-        Customer();
+        Customer()= default;
         explicit Customer(string name){ this->name=std::move(name);};
-        friend ostream& operator<<(ostream& os, const Customer& cust){
-            os << cust.name;
-            return os;
-        }
+        friend ostream& operator<<(ostream& os, const Customer& customer);
 };
 #endif //LW_CUSTOMER_HPP
