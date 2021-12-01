@@ -21,7 +21,7 @@ class Bank {
         }
         inline friend ostream& operator<<(ostream& os, const Bank& bank){
             for (Account& a : accounts) {
-                os << a;
+                os << a << "\n";
             }
             return os;
         }
