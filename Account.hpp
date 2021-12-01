@@ -12,7 +12,6 @@ class Account {
         double balance{};
 
     public:
-        Account(string number, Customer& customer, double balance);
         virtual ~Account() = default;
         virtual void accrue(double rate) {};
         virtual double getBalance() { return balance; };

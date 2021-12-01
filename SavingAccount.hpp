@@ -11,7 +11,11 @@ class SavingAccount : public Account {
     private:
         double interest = 0;
     public:
-        SavingAccount(string number, Customer &customer, double balance) : Account(std::move(number), customer, balance){}
+        inline SavingAccount(string number, Customer &customer, double balance){
+            this->number=std::move(number);
+            this->customer = customer;
+            this->balance=balance;
+        }
         void accrue(double rate) override;
 };
 
