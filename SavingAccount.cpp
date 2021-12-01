@@ -1,7 +1,9 @@
 #include "SavingAccount.hpp"
+
+#include <utility>
 using namespace std;
 SavingAccount::SavingAccount(string number, Customer& customer, double balance) {
-    this->number=number;
+    this->number=std::move(number);
     this->customer=customer;
     this->balance=balance;
 };

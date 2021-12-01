@@ -6,7 +6,7 @@
 #include <string>
 using namespace std;
 
-class SavingAccount : public Account {
+class SavingAccount : virtual public Account {
     private:
         double interest = 0;
 

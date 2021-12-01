@@ -16,6 +16,7 @@ class Account {
         double getBalance() { return balance; };
         void deposit(double amount) { balance += amount; };
         void withdraw(double amount) { balance -= amount; };
+        //void setCustomer(Customer& customer){ this->customer = customer; };
         friend ostream& operator<<(ostream& os, const Account& acct);
 };
 

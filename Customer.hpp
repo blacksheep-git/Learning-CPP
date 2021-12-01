@@ -2,13 +2,14 @@
 #define LW_CUSTOMER_HPP
 
 #include <string>
+#include <utility>
 using namespace std;
 
 class Customer {
     public:
-        std::string name;
-        Customer(std::string name){
-            this->name=name;};
+        string name;
+        Customer();
+        explicit Customer(string name){ this->name=std::move(name);};
         friend ostream& operator<<(ostream& os, const Customer& cust);
 };
 #endif //LW_CUSTOMER_HPP
